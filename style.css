@@ -1,0 +1,258 @@
+/*Стилизація проєкта -*/
+/*index.html - всі блоки з user - по 2 в рядок. кнопки/аосилвння розташувати під інформацією про user.*/
+/*user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.*/
+/*блоки з короткою іфною про post - в ряд по 5 .*/
+/*post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд. Всі елементи котрі характеризують users,
+ posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)*/
+body{
+    background: #38383b;
+}
+
+.a-main{
+    transition: 0.7s;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #52525b;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+}
+h1{
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 3px solid white;
+    margin-left: 25%;
+    width: 50%;
+
+}
+.user-item{
+    width: 90%;
+    min-width: 500px;
+    margin-left: 5%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+   /*overflow: auto;*/
+}
+.divLeft-user-item {
+    width: 200px;
+}
+.divRight-user-item {
+    width: 200px;
+}
+.main-user-info{
+    min-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+.div-users-info{
+
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #52525b;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+}
+.user-button{
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 90%;
+    display: inline-block;
+    background-color: #52525b;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 20px;
+    cursor: grab;
+    border: 4px solid white;
+    border-radius: 3px;
+}
+.div-center{
+
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.container {
+    min-width: 1200px;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+.block {
+    transition: 0.5s;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: white;
+    border: 2.5px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+.p-user {
+    font-size: 18px;
+    font-weight: bold ;
+    font-style: italic;
+    margin: 0;
+}
+
+.a-user {
+    transition: 1s;
+    padding: 4px;
+    color: #333338;
+    text-decoration: none;
+    margin-top: 10px;
+    border: 2px solid #7e7c7c;
+}
+.main-post-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+.div-post-info{
+    width: 200px;
+    margin: 10px;
+    background-color: #52525b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    /*text-align: center;*/
+    border-radius: 3px;
+}
+.container-post{
+    /*margin-left: 120px;*/
+    min-width: 1200px;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*align-items: center;*/
+
+    padding: 20px;
+}
+.block-post{
+    width: 225px;
+    /*height: 200px;*/
+    margin: 10px;
+    background-color: white;
+    border: 2.5px solid #000000;
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 1rem 1.5rem;
+}
+.div-post-comment {
+    font-size: 18px;
+    font-style: italic;
+    margin: 3px;
+}
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
+    30% {
+        -webkit-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+    40% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    50% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    65% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
+    30% {
+        -webkit-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+    40% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    50% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    65% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.block-post:hover {
+    -webkit-animation: swing 0.6s ease;
+    animation: swing 0.6s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.user-button:hover {
+    -webkit-animation: swing 0.8s ease;
+    animation: swing 0.8s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+.a-main:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.a-user:hover {
+    background-color: rgba(83, 154, 44, 0.7);
+}
+.block:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+
+}
